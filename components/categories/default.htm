@@ -1,0 +1,11 @@
+<ul class="categories">
+    {% for category in categories %}
+    <li>
+        {% if image %}<div class="category_image"><p><a href="{{ category.urk }}"><img src="" alt="{{ category.name }}"></a></p></div>{% endif %}
+        <div class="category_name"><h3><a href="{{ category.url }}">{{ category.name }}</a></h3></div>
+        {% if desc %}<div class="category_desc"><p><a href="{{ category.url }}">{{ category.desc|raw }}</a></p></div>{% endif %}
+    </li>
+    {% else %}
+    <li class="no-data">{{ noPostsMessage }}</li>
+    {% endfor %}
+</ul>

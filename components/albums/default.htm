@@ -1,0 +1,11 @@
+<ul class="albums">
+    {% for album in albums %}
+    <li>
+        {% if image %}<div class="album_image"><p><a href="{{ album.slug }}"><img src="" alt="{{ album.name }}"></a></p></div>{% endif %}
+        <div class="album_name"><h3><a href="{{ album.slug }}">{{ album.name }}</a></h3></div>
+        {% if desc %}<div class="album_desc"><p><a href="{{ album.slug }}">{{ album.desc|raw }}</a></p></div>{% endif %}
+    </li>
+    {% else %}
+    <li class="no-data">{{ noImagesMessage }}</li>
+    {% endfor %}
+</ul>

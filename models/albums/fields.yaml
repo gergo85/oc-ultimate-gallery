@@ -1,0 +1,71 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: indikator.gallery::lang.form.name
+        required: true
+        span: auto
+
+    slug:
+        label: indikator.gallery::lang.form.slug
+        span: auto
+
+tabs:
+    fields:
+
+        images:
+            tab: indikator.gallery::lang.form.images
+            label: indikator.gallery::lang.form.upload
+            type: mediafinder
+            mode: image
+            imageHeight: 180
+            imageWidth: 180
+
+        labels:
+            tab: indikator.gallery::lang.form.properties
+            label: indikator.gallery::lang.form.labels
+            span: auto
+
+        user_id:
+            tab: indikator.gallery::lang.form.properties
+            label: indikator.gallery::lang.form.owner
+            type: dropdown
+            required: true
+            span: auto
+
+        desc:
+            tab: indikator.gallery::lang.form.properties
+            label: indikator.gallery::lang.form.desc
+            type: richeditor
+            size: huge
+            span: full
+
+secondaryTabs:
+    fields:
+
+        image:
+            label: indikator.gallery::lang.form.image
+            type: mediafinder
+            mode: image
+            imageHeight: 260
+            imageWidth: 260
+
+        category_id:
+            label: indikator.gallery::lang.form.category
+            type: dropdown
+
+        status:
+            label: indikator.gallery::lang.form.status
+            required: true
+            type: dropdown
+            options:
+                1: indikator.gallery::lang.button.active
+                2: indikator.gallery::lang.button.inactive
+
+        common:
+            label: indikator.gallery::lang.form.common
+            type: textarea
+            size: small

@@ -1,0 +1,21 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    status_active:
+        label: indikator.gallery::lang.button.active
+        type: checkbox
+        conditions: status = 1
+
+    status_inactive:
+        label: indikator.gallery::lang.button.inactive
+        type: checkbox
+        conditions: status = 2
+
+    owner:
+        label: indikator.gallery::lang.form.owner
+        modelClass: Indikator\Gallery\Models\User
+        nameFrom: login
+        conditions: user_id in (:filtered)

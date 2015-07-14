@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.gallery::lang.title.categories
+form: @/plugins/indikator/gallery/models/categories/fields.yaml
+modelClass: Indikator\Gallery\Models\Categories
+defaultRedirect: indikator/gallery/categories
+
+create:
+    redirect: indikator/gallery/categories
+    redirectClose: indikator/gallery/categories
+
+update:
+    redirect: indikator/gallery/categories
+    redirectClose: indikator/gallery/categories

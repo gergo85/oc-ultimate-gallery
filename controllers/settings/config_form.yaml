@@ -1,0 +1,7 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.gallery::lang.menu.settings
+form: 
+modelClass: 

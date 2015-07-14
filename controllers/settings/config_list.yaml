@@ -1,0 +1,7 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: indikator.gallery::lang.menu.settings
+list: @/plugins/indikator/gallery/models/settings/columns.yaml
+modelClass: Indikator\Gallery\Models\Settings
