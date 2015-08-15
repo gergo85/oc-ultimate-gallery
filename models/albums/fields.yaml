@@ -19,10 +19,8 @@ tabs:
         images:
             tab: indikator.gallery::lang.form.images
             label: indikator.gallery::lang.form.upload
-            type: mediafinder
+            type: fileupload
             mode: image
-            imageHeight: 180
-            imageWidth: 180
 
         labels:
             tab: indikator.gallery::lang.form.properties

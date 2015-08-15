@@ -39,7 +39,7 @@ class Albums extends Controller
                 }
             }
 
-            Flash::success(Lang::get('indikator.gallery::lang.booking.activate_succes'));
+            Flash::success(Lang::get('indikator.gallery::lang.flash.activate'));
         }
 
         return $this->listRefresh('manage');
@@ -57,7 +57,7 @@ class Albums extends Controller
                 }
             }
 
-            Flash::success(Lang::get('indikator.gallery::lang.booking.deactivate_succes'));
+            Flash::success(Lang::get('indikator.gallery::lang.flash.deactivate'));
         }
 
         return $this->listRefresh('manage');
@@ -75,7 +75,7 @@ class Albums extends Controller
                 }
             }
 
-            Flash::success(Lang::get('indikator.gallery::lang.booking.remove_succes'));
+            Flash::success(Lang::get('indikator.gallery::lang.flash.remove'));
         }
 
         return $this->listRefresh('manage');

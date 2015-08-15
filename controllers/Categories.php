@@ -40,7 +40,7 @@ class Categories extends Controller
                 }
             }
 
-            Flash::success(Lang::get('indikator.gallery::lang.categories.activate_succes'));
+            Flash::success(Lang::get('indikator.gallery::lang.flash.activate'));
         }
 
         return $this->listRefresh('manage');
@@ -58,7 +58,7 @@ class Categories extends Controller
                 }
             }
 
-            Flash::success(Lang::get('indikator.gallery::lang.categories.deactivate_succes'));
+            Flash::success(Lang::get('indikator.gallery::lang.flash.deactivate'));
         }
 
         return $this->listRefresh('manage');
@@ -76,7 +76,7 @@ class Categories extends Controller
                 }
             }
 
-            Flash::success(Lang::get('indikator.gallery::lang.categories.remove_succes'));
+            Flash::success(Lang::get('indikator.gallery::lang.flash.remove_succes'));
         }
 
         return $this->listRefresh('manage');
