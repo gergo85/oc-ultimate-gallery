@@ -2,9 +2,9 @@
 
 use Cms\Classes\ComponentBase;
 use Cms\Classes\Page;
+use Lang;
 use Indikator\Gallery\Models\Albums as Album;
 use Indikator\Gallery\Models\Categories as Category;
-use Lang;
 use DB;
 
 class Categories extends ComponentBase
@@ -36,7 +36,8 @@ class Categories extends ComponentBase
                 'title'       => 'indikator.gallery::lang.category.order_title',
                 'description' => 'indikator.gallery::lang.category.order_description',
                 'type'        => 'dropdown',
-                'default'     => 'published_at desc'
+                'default'     => 'published_at desc',
+                'options'     => ['title asc' => Lang::get('indikator.gallery::lang.sorting.title_asc'), 'title desc' => Lang::get('indikator.gallery::lang.sorting.title_desc'), 'created_at asc' => Lang::get('indikator.gallery::lang.sorting.created_at_asc'), 'created_at desc' => Lang::get('indikator.gallery::lang.sorting.created_at_desc'), 'updated_at asc' => Lang::get('indikator.gallery::lang.sorting.updated_at_asc'), 'updated_at desc' => Lang::get('indikator.gallery::lang.sorting.updated_at_desc'), 'published_at asc' => Lang::get('indikator.gallery::lang.sorting.published_at_asc'), 'published_at desc' => Lang::get('indikator.gallery::lang.sorting.published_at_desc')]
             ],
             'categoryPage' => [
                 'title'       => 'indikator.gallery::lang.category.page_title',
@@ -50,11 +51,6 @@ class Categories extends ComponentBase
     public function getCategoryPageOptions()
     {
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
-    }
-
-    public function getSortOrderOptions()
-    {
-        return Album::$allowedSortingOptions;
     }
 
     public function onRender()

@@ -30,13 +30,6 @@ class Albums extends Model
 
     public $translatable = ['name', 'labels', 'desc'];
 
-    public static $allowedSortingOptions = array(
-        'title asc' => 'indikator.gallery::lang.sorting.title_asc',
-        'title desc' => 'indikator.gallery::lang.sorting.title_desc',
-        'created_at asc' => 'indikator.gallery::lang.sorting.created_asc',
-        'created_at desc' => 'indikator.gallery::lang.sorting.created_desc'
-    );
-
     public function getUserIdOptions()
     {
         return User::getNameList();

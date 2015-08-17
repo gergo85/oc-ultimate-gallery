@@ -184,8 +184,8 @@ return [
         'links' => 'Links',
         'optionstrue' => 'True',
         'optionsfalse' => 'False',
-        'no_images_title' => 'No images message',
-        'no_images_description' => 'Message to display in the album list in case if there are no images. This property is used by the default component partial.',
+        'no_images' => 'No images message',
+        'no_images_descriptio' => 'Message to display in the album list in case if there are no images. This property is used by the default component partial.',
         'no_images_found' => 'No images found',
         'order_title' => 'Image order',
         'order_description' => 'Attribute on which the images should be ordered',
@@ -207,7 +207,11 @@ return [
     'sorting' => [
         'title_asc' => 'Title (ascending)',
         'title_desc' => 'Title (descending)',
-        'created_asc' => 'Created (ascending)',
-        'created_desc' => 'Created (descending)'
+        'created_at_asc' => 'Created (ascending)',
+        'created_at_desc' => 'Created (descending)',
+        'updated_at_asc' => 'Updated (ascending)',
+        'updated_at_desc' => 'Updated (descending)',
+        'published_at_asc' => 'Published (ascending)',
+        'published_at_desc' => 'Published (descending)'
     ]
 ];

@@ -184,8 +184,8 @@ return [
         'links' => 'Linkek',
         'optionstrue' => 'Igen',
         'optionsfalse' => 'Nem',
-        'no_images_title' => 'Nincsenek képek üzenet',
-        'no_images_description' => 'Az albumban megjelenő üzenet abban az esetben, ha nincsenek képek. Az alapértelmezett komponensrész használja ezt a tulajdonságot.',
+        'no_images' => 'Nincsenek képek üzenet',
+        'no_images_descriptio' => 'Az albumban megjelenő üzenet abban az esetben, ha nincsenek képek. Az alapértelmezett komponensrész használja ezt a tulajdonságot.',
         'no_images_found' => 'Nincs kép az albumban',
         'order_title' => 'Képek sorrendje',
         'order_description' => 'Attribútum, mely alapján rendezni kell a képeket.',
@@ -207,7 +207,11 @@ return [
     'sorting' => [
         'title_asc' => 'Név (emelkedő)',
         'title_desc' => 'Név (csökkenő)',
-        'created_asc' => 'Létrehozva (emelkedő)',
-        'created_desc' => 'Létrehozva (csökkenő)'
+        'created_at_asc' => 'Létrehozva (emelkedő)',
+        'created_at_desc' => 'Létrehozva (csökkenő)',
+        'updated_at_asc' => 'Frissítve (emelkedő)',
+        'updated_at_desc' => 'Frissítve (csökkenő)',
+        'published_at_asc' => 'Publikálva (emelkedő)',
+        'published_at_desc' => 'Publikálva (csökkenő)'
     ]
 ];

@@ -3,3 +3,4 @@
     - create_albums_table.php
     - create_categories_table.php
 1.0.1: Minor improvements and bugfixes.
+1.0.2: Fixed the translate issues.
