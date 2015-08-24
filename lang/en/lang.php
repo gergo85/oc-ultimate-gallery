@@ -54,6 +54,8 @@ return [
         'remove' => 'Successfully removed those items.'
     ],
     'widget' => [
+        'albums' => 'Gallery - Albums',
+        'categories' => 'Gallery - Categories',
         'show_total' => 'Show total',
         'show_active' => 'Show active',
         'show_inactive' => 'Show inactive',

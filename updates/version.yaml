@@ -4,3 +4,4 @@
     - create_categories_table.php
 1.0.1: Minor improvements and bugfixes.
 1.0.2: Fixed the translate issues.
+1.0.3: Fixed the widget name issues.

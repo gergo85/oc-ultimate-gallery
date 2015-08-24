@@ -52,11 +52,11 @@ class Plugin extends PluginBase
     {
         return [
             'Indikator\Gallery\ReportWidgets\Albums' => [
-                'label'   => 'indikator.gallery::lang.albums.widget',
+                'label'   => 'indikator.gallery::lang.widget.albums',
                 'context' => 'dashboard'
             ],
             'Indikator\Gallery\ReportWidgets\Categories' => [
-                'label'   => 'indikator.gallery::lang.categories.widget',
+                'label'   => 'indikator.gallery::lang.widget.categories',
                 'context' => 'dashboard'
             ]
         ];

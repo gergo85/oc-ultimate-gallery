@@ -54,6 +54,8 @@ return [
         'remove' => 'A tételek sikeresen eltávolításra kerültek.'
     ],
     'widget' => [
+        'albums' => 'Galéria - Albumok',
+        'categories' => 'Galéria - Kategóriák',
         'show_total' => 'Összes mutatása',
         'show_active' => 'Aktívak mutatása',
         'show_inactive' => 'Inaktívak mutatása',
