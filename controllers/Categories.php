@@ -30,12 +30,9 @@ class Categories extends Controller
 
     public function onActivateCategories()
     {
-        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $objectId)
-            {
-                if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 2)->count() == 1)
-                {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $objectId) {
+                if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 2)->count() == 1) {
                     DB::table('gallery_categories')->where('id', $objectId)->update(array('status' => 1));
                 }
             }
@@ -48,12 +45,9 @@ class Categories extends Controller
 
     public function onDeactivateCategories()
     {
-        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $objectId)
-            {
-                if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 1)->count() == 1)
-                {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $objectId) {
+                if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 1)->count() == 1) {
                     DB::table('gallery_categories')->where('id', $objectId)->update(array('status' => 2));
                 }
             }
@@ -66,12 +60,9 @@ class Categories extends Controller
 
     public function onRemoveCategories()
     {
-        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $objectId)
-            {
-                if (DB::table('gallery_categories')->where('id', $objectId)->count() == 1)
-                {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $objectId) {
+                if (DB::table('gallery_categories')->where('id', $objectId)->count() == 1) {
                     DB::table('gallery_categories')->where('id', $objectId)->delete();
                 }
             }

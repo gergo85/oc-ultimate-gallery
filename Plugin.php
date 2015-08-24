@@ -10,7 +10,9 @@ class Plugin extends PluginBase
         return [
             'name'        => 'indikator.gallery::lang.plugin.name',
             'description' => 'indikator.gallery::lang.plugin.description',
-            'author'      => 'indikator.gallery::lang.plugin.author'
+            'author'      => 'indikator.gallery::lang.plugin.author',
+            'icon'        => 'icon-picture-o',
+            'homepage'    => 'https://github.com/gergo85/oc-ultimate-gallery'
         ];
     }
 
@@ -74,9 +76,18 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'indikator.gallery.albums'     => ['tab' => 'indikator.gallery::lang.menu.gallery', 'label' => 'indikator.gallery::lang.permission.albums'],
-            'indikator.gallery.categories' => ['tab' => 'indikator.gallery::lang.menu.gallery', 'label' => 'indikator.gallery::lang.permission.categories'],
-            'indikator.gallery.settings'   => ['tab' => 'indikator.gallery::lang.menu.gallery', 'label' => 'indikator.gallery::lang.permission.settings']
+            'indikator.gallery.albums' => [
+                'tab' => 'indikator.gallery::lang.menu.gallery',
+                'label' => 'indikator.gallery::lang.permission.albums'
+            ],
+            'indikator.gallery.categories' => [
+                'tab' => 'indikator.gallery::lang.menu.gallery',
+                'label' => 'indikator.gallery::lang.permission.categories'
+            ],
+            'indikator.gallery.settings' => [
+                'tab' => 'indikator.gallery::lang.menu.gallery',
+                'label' => 'indikator.gallery::lang.permission.settings'
+            ]
         ];
     }
 }

@@ -29,12 +29,9 @@ class Albums extends Controller
 
     public function onActivateAlbums()
     {
-        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $objectId)
-            {
-                if (DB::table('gallery_albums')->where('id', $objectId)->where('status', 2)->count() == 1)
-                {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $objectId) {
+                if (DB::table('gallery_albums')->where('id', $objectId)->where('status', 2)->count() == 1) {
                     DB::table('gallery_albums')->where('id', $objectId)->update(array('status' => 1));
                 }
             }
@@ -47,12 +44,9 @@ class Albums extends Controller
 
     public function onDeactivateAlbums()
     {
-        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $objectId)
-            {
-                if (DB::table('gallery_albums')->where('id', $objectId)->where('status', 1)->count() == 1)
-                {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $objectId) {
+                if (DB::table('gallery_albums')->where('id', $objectId)->where('status', 1)->count() == 1) {
                     DB::table('gallery_albums')->where('id', $objectId)->update(array('status' => 2));
                 }
             }
@@ -65,12 +59,9 @@ class Albums extends Controller
 
     public function onRemoveAlbums()
     {
-        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds))
-        {
-            foreach ($checkedIds as $objectId)
-            {
-                if (DB::table('gallery_albums')->where('id', $objectId)->count() == 1)
-                {
+        if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
+            foreach ($checkedIds as $objectId) {
+                if (DB::table('gallery_albums')->where('id', $objectId)->count() == 1) {
                     DB::table('gallery_albums')->where('id', $objectId)->delete();
                 }
             }
