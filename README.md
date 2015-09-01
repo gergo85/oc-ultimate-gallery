@@ -35,7 +35,4 @@ I extended the album with some useful properties.
 ###Add widget
 1. Go to the __Dashboard__ page in Backend.
 1. Click on the __Add widget__ button.
-1. Select the current widget from the list.
-
-###Credits
-* Plugin icon: [Web App icons](http://icons8.com/web-app/new-icons/all)
+1. __Select__ the current widget from the list.

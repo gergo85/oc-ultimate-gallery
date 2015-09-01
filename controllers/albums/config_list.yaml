@@ -3,7 +3,7 @@
 # ===================================
 
 title: indikator.gallery::lang.menu.albums
-list: @/plugins/indikator/gallery/models/albums/columns.yaml
+list: ~/plugins/indikator/gallery/models/albums/columns.yaml
 modelClass: Indikator\Gallery\Models\Albums
 recordUrl: indikator/gallery/albums/update/:id
 noRecordsMessage: backend::lang.list.no_records

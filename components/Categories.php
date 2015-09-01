@@ -5,7 +5,6 @@ use Cms\Classes\Page;
 use Lang;
 use Indikator\Gallery\Models\Albums as Album;
 use Indikator\Gallery\Models\Categories as Category;
-use DB;
 
 class Categories extends ComponentBase
 {

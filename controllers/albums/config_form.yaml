@@ -3,7 +3,7 @@
 # ===================================
 
 name: indikator.gallery::lang.title.albums
-form: @/plugins/indikator/gallery/models/albums/fields.yaml
+form: ~/plugins/indikator/gallery/models/albums/fields.yaml
 modelClass: Indikator\Gallery\Models\Albums
 defaultRedirect: indikator/gallery/albums
 
