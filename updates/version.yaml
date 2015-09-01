@@ -7,3 +7,4 @@
 1.0.3: Fixed the widget name issues.
 1.0.4: Added the plugin icon.
 1.0.5: Improved the widget exception handling.
+1.0.6: Updated the jQuery to 2.1.4
