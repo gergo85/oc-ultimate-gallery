@@ -8,3 +8,4 @@
 1.0.4: Added the plugin icon.
 1.0.5: Improved the widget exception handling.
 1.0.6: Updated the jQuery to 2.1.4
+1.0.7: Delete the images from database.
