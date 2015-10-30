@@ -46,4 +46,9 @@ class Albums extends Model
             $this->slug = Str::slug($this->name);
         }
     }
+
+    public function afterDelete()
+    {
+        $this->images && $this->images->delete();
+    }
 }
