@@ -4,6 +4,7 @@
 
 title: indikator.gallery::lang.menu.albums
 list: ~/plugins/indikator/gallery/models/albums/columns.yaml
+
 modelClass: Indikator\Gallery\Models\Albums
 recordUrl: indikator/gallery/albums/update/:id
 noRecordsMessage: backend::lang.list.no_records
@@ -11,6 +12,7 @@ noRecordsMessage: backend::lang.list.no_records
 recordsPerPage: 15
 showCheckboxes: true
 showSetup: true
+
 defaultSort:
     column: date
     direction: desc

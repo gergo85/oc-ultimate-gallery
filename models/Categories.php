@@ -1,10 +1,10 @@
 <?php namespace Indikator\Gallery\Models;
 
 use Model;
-use Str;
 
 class Categories extends Model
 {
+    use \October\Rain\Database\Traits\Sluggable;
     use \October\Rain\Database\Traits\Validation;
 
     public $implement = ['@RainLab.Translate.Behaviors.TranslatableModel'];
@@ -18,6 +18,8 @@ class Categories extends Model
         'status'  => 'required|between:1,2|numeric'
     ];
 
+    protected $slugs = ['slug' => 'name'];
+
     public $belongsTo = [
         'user' => ['Indikator\Gallery\Models\User']
     ];
@@ -27,12 +29,5 @@ class Categories extends Model
     public function getUserIdOptions()
     {
         return User::getNameList();
-    }
-
-    public function beforeSave()
-    {
-        if (!isset($this->slug) || empty($this->slug)) {
-            $this->slug = Str::slug($this->name);
-        }
     }
 }
