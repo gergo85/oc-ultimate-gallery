@@ -11,6 +11,7 @@ fields:
 
     slug:
         label: indikator.gallery::lang.form.slug
+        preset: name
         span: auto
 
     labels:
