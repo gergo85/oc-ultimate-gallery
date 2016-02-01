@@ -41,7 +41,16 @@
             </div>
         </div>
 
-        <script type="text/javascript">document.getElementById('Form-field-Albums-name').focus();</script>
+        <script type="text/javascript">
+        setTimeout(function() {
+            if (document.getElementById('Form-field-Albums-name')) {
+                document.getElementById('Form-field-Albums-name').focus();
+            }
+            else {
+                document.getElementById('Form-field-Albums-name-placeholderField').focus();
+            }
+        }, 300);
+        </script>
 
     <?php Block::endPut() ?>
 
