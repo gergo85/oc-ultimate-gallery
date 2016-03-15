@@ -20,7 +20,7 @@ I extended the album with some useful properties.
 * Categories
 
 ###Frontend booking
-1. Go to the __CMS -> Pages__ page in Backend.
+1. Go to the __CMS > Pages__ page in Backend.
 1. Added __Gallery__ components in Components panel.
 
 ###Available languages
