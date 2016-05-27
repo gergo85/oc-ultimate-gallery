@@ -1,4 +1,4 @@
-##Ultimate Gallery plugin for OctoberCMS
+##Ultimate Gallery plugin
 Manage your images easily. This plugin based on [RJGallery](http://octobercms.com/plugin/raviraj-rjgallery).
 I extended the album with some useful properties.
 
@@ -7,7 +7,7 @@ I extended the album with some useful properties.
 * Managing categories
 
 ###Extra features
-* Multilanguage support to text fields.
+* Multi-lingual support to text fields.
 * Available the wide range of widgets.
 
 ###Frontend widgets
