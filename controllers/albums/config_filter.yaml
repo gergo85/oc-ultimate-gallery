@@ -19,3 +19,13 @@ scopes:
         modelClass: Indikator\Gallery\Models\User
         nameFrom: login
         conditions: user_id in (:filtered)
+
+    created_date:
+        label: indikator.gallery::lang.form.created
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'
+
+    updated_date:
+        label: indikator.gallery::lang.form.updated
+        type: daterange
+        conditions: updated_at >= ':after' AND updated_at <= ':before'
