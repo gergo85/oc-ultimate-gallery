@@ -1,8 +1,13 @@
 <?php
 
-$status = [
-    1 => 'indikator.gallery::lang.button.active',
-    2 => 'indikator.gallery::lang.button.inactive'
+$text = [
+    1 => 'active',
+    2 => 'inactive'
 ];
 
-echo Lang::get($status[$record->status]);
+$class = [
+    1 => 'text-info',
+    2 => 'text-danger'
+];
+
+echo '<span class="oc-icon-circle '.$class[$record->status].'">'.Lang::get('indikator.gallery::lang.button.'.$text[$record->status]).'</span>';

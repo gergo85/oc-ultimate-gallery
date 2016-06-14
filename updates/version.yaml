@@ -11,3 +11,5 @@
 1.0.7: Delete the images from database.
 1.0.8: Improvements and bug fixes.
 1.0.9: Autocomplete the Slug field.
+1.1.0: Added the daterange filters for lists.
+1.1.1: Minor UI improvements.

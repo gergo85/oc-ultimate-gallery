@@ -59,10 +59,11 @@ secondaryTabs:
         status:
             label: indikator.gallery::lang.form.status
             required: true
-            type: dropdown
+            type: radio
             options:
                 1: indikator.gallery::lang.button.active
                 2: indikator.gallery::lang.button.inactive
+            default: 1
 
         common:
             label: indikator.gallery::lang.form.common
