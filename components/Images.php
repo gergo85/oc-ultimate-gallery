@@ -32,7 +32,10 @@ class Images extends ComponentBase
                 'description'       => 'indikator.gallery::lang.jqueryinject.description',
                 'type'              => 'dropdown',
                 'default'           => 'yes',
-                'options'           => ['yes' => 'indikator.gallery::lang.jqueryinject.optionsyes', 'no' => 'indikator.gallery::lang.jqueryinject.optionsno']
+                'options'           => [
+                    'yes' => 'indikator.gallery::lang.jqueryinject.optionsyes',
+                    'no'  => 'indikator.gallery::lang.jqueryinject.optionsno'
+                ]
             ],
             'thumbnail' => [
                 'title'             => 'indikator.gallery::lang.thumbnail.title',
@@ -40,7 +43,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.options'),
-                'options'           => ['true' => 'indikator.gallery::lang.thumbnail.optionstrue', 'false' => 'indikator.gallery::lang.thumbnail.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.thumbnail.optionstrue',
+                    'false' => 'indikator.gallery::lang.thumbnail.optionsfalse'
+                ]
             ],
             'caption' => [
                 'title'             => 'indikator.gallery::lang.caption.title',
@@ -48,7 +54,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.options'),
-                'options'           => ['true' => 'indikator.gallery::lang.caption.optionstrue', 'false' => 'indikator.gallery::lang.caption.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.caption.optionstrue',
+                    'false' => 'indikator.gallery::lang.caption.optionsfalse'
+                ]
             ],
             'desc' => [
                 'title'             => 'indikator.gallery::lang.desc.title',
@@ -56,7 +65,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.options'),
-                'options'           => ['true' => 'indikator.gallery::lang.desc.optionstrue', 'false' => 'indikator.gallery::lang.desc.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.desc.optionstrue',
+                    'false' => 'indikator.gallery::lang.desc.optionsfalse'
+                ]
             ],
             'counter' => [
                 'title'             => 'indikator.gallery::lang.counter.title',
@@ -64,7 +76,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.options'),
-                'options'           => ['true' => 'indikator.gallery::lang.counter.optionstrue', 'false' => 'indikator.gallery::lang.counter.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.counter.optionstrue',
+                    'false' => 'indikator.gallery::lang.counter.optionsfalse'
+                ]
             ],
             'controls' => [
                 'title'             => 'indikator.gallery::lang.controls.title',
@@ -72,7 +87,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.options'),
-                'options'           => ['true' => 'indikator.gallery::lang.controls.optionstrue', 'false' => 'indikator.gallery::lang.controls.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.controls.optionstrue',
+                    'false' => 'indikator.gallery::lang.controls.optionsfalse'
+                ]
             ],
             'preload' => [
                 'title'             => 'indikator.gallery::lang.preload.title',
@@ -89,7 +107,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'slide',
                 'group'             => Lang::get('indikator.gallery::lang.groups.effects'),
-                'options'           => ['slide' => 'indikator.gallery::lang.mode.optionsslide', 'fade' => 'indikator.gallery::lang.mode.optionsfade']
+                'options'           => [
+                    'slide' => 'indikator.gallery::lang.mode.optionsslide',
+                    'fade'  => 'indikator.gallery::lang.mode.optionsfade'
+                ]
             ],
             'speed' => [
                 'title'             => 'indikator.gallery::lang.speed.title',
@@ -106,7 +127,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.effects'),
-                'options'           => ['true' => 'indikator.gallery::lang.loop.optionstrue', 'false' => 'indikator.gallery::lang.loop.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.loop.optionstrue',
+                    'false' => 'indikator.gallery::lang.loop.optionsfalse'
+                ]
             ],
             'auto' => [
                 'title'             => 'indikator.gallery::lang.auto.title',
@@ -114,7 +138,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'false',
                 'group'             => Lang::get('indikator.gallery::lang.groups.effects'),
-                'options'           => ['true'=>'indikator.gallery::lang.auto.optionstrue', 'false' => 'indikator.gallery::lang.auto.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.auto.optionstrue',
+                    'false' => 'indikator.gallery::lang.auto.optionsfalse'
+                ]
             ],
             'pause' => [
                 'title'             => 'indikator.gallery::lang.pause.title',
@@ -131,7 +158,10 @@ class Images extends ComponentBase
                 'type'              => 'dropdown',
                 'default'           => 'true',
                 'group'             => Lang::get('indikator.gallery::lang.groups.effects'),
-                'options'           => ['true' => 'indikator.gallery::lang.escKey.optionstrue', 'false' => 'indikator.gallery::lang.escKey.optionsfalse']
+                'options'           => [
+                    'true'  => 'indikator.gallery::lang.escKey.optionstrue',
+                    'false' => 'indikator.gallery::lang.escKey.optionsfalse'
+                ]
             ],
             'height' => [
                 'title'             => 'indikator.gallery::lang.height.title',
@@ -156,7 +186,13 @@ class Images extends ComponentBase
                 'description'       => 'indikator.gallery::lang.resizer.description',
                 'type'              => 'dropdown',
                 'default'           => 'auto',
-                'options'           => ['auto' => 'indikator.gallery::lang.resizer.optionsauto', 'exact' => 'indikator.gallery::lang.resizer.optionsexact', 'portrait' => 'indikator.gallery::lang.resizer.optionsportrait', 'landscape' => 'indikator.gallery::lang.resizer.optionslandscape', 'crop' => 'indikator.gallery::lang.resizer.optionscrop'],
+                'options'           => [
+                    'auto'      => 'indikator.gallery::lang.resizer.optionsauto',
+                    'exact'     => 'indikator.gallery::lang.resizer.optionsexact',
+                    'portrait'  => 'indikator.gallery::lang.resizer.optionsportrait',
+                    'landscape' => 'indikator.gallery::lang.resizer.optionslandscape',
+                    'crop'      => 'indikator.gallery::lang.resizer.optionscrop'
+                ],
                 'group'             => Lang::get('indikator.gallery::lang.groups.thumbs')
             ]
         ];

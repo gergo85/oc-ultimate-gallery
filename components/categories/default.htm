@@ -5,6 +5,7 @@
         <div class="category_name"><h3><a href="{{ category.url }}">{{ category.name }}</a></h3></div>
         {% if desc %}<div class="category_desc"><p><a href="{{ category.url }}">{{ category.desc|raw }}</a></p></div>{% endif %}
     </li>
+
     {% else %}
     <li class="no-data">{{ noPostsMessage }}</li>
     {% endfor %}

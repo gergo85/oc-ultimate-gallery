@@ -33,7 +33,7 @@ class Categories extends Controller
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
                 if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 2)->count() == 1) {
-                    DB::table('gallery_categories')->where('id', $objectId)->update(array('status' => 1));
+                    DB::table('gallery_categories')->where('id', $objectId)->update(['status' => 1]);
                 }
             }
 
@@ -48,7 +48,7 @@ class Categories extends Controller
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
                 if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 1)->count() == 1) {
-                    DB::table('gallery_categories')->where('id', $objectId)->update(array('status' => 2));
+                    DB::table('gallery_categories')->where('id', $objectId)->update(['status' => 2]);
                 }
             }
 
