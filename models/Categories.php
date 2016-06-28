@@ -13,7 +13,7 @@ class Categories extends Model
 
     public $rules = [
         'name'    => 'required|between:1,100',
-        'slug'    => ['between:1,100', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i'],
+        'slug'    => ['between:1,100', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i', 'unique:gallery_categories'],
         'user_id' => 'between:1,999999|numeric',
         'status'  => 'required|between:1,2|numeric'
     ];
