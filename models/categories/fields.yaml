@@ -11,6 +11,7 @@ fields:
 
     slug:
         label: indikator.gallery::lang.form.slug
+        required: true
         preset: name
         span: auto
 
@@ -48,6 +49,17 @@ secondaryTabs:
                 1: indikator.gallery::lang.button.active
                 2: indikator.gallery::lang.button.inactive
             default: 1
+            span: auto
+
+        featured:
+            label: indikator.gallery::lang.form.featured
+            required: true
+            type: radio
+            options:
+                1: indikator.gallery::lang.form.yes
+                2: indikator.gallery::lang.form.no
+            default: 2
+            span: auto
 
         common:
             label: indikator.gallery::lang.form.common

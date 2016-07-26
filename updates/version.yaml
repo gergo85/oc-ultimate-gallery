@@ -13,3 +13,7 @@
 1.0.9: Autocomplete the Slug field.
 1.1.0: Added the daterange filters for lists.
 1.1.1: Minor UI improvements.
+1.1.2:
+    - Minor improvements and bugfix.
+    - add_featured_field_to_table.php
+    - update_timestamp_nullable.php

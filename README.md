@@ -28,9 +28,9 @@ I extended the album with some useful properties.
 * hu - Magyar
 
 ###Installation
-1. Go to the __Settings -> Updates & Plugins__ page in the Backend.
-1. Click on the __Install plugins__ button.
-1. Type the __Ultimate Gallery__ text in the search field.
+1. Download the full __source code__ from Github.
+1. Copy the files to __plugins/indikator/gallery__ folder.
+1. Login in again to the __back-end__ of your website.
 
 ###Add widget
 1. Go to the __Dashboard__ page in the Backend.
