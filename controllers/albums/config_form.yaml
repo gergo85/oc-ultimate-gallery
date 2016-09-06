@@ -9,9 +9,9 @@ modelClass: Indikator\Gallery\Models\Albums
 defaultRedirect: indikator/gallery/albums
 
 create:
-    redirect: indikator/gallery/albums
+    redirect: indikator/gallery/albums/update/:id
     redirectClose: indikator/gallery/albums
 
 update:
-    redirect: indikator/gallery/albums
+    redirect: indikator/gallery/albums/update/:id
     redirectClose: indikator/gallery/albums

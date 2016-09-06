@@ -9,9 +9,9 @@ modelClass: Indikator\Gallery\Models\Categories
 defaultRedirect: indikator/gallery/categories
 
 create:
-    redirect: indikator/gallery/categories
+    redirect: indikator/gallery/categories/update/:id
     redirectClose: indikator/gallery/categories
 
 update:
-    redirect: indikator/gallery/categories
+    redirect: indikator/gallery/categories/update/:id
     redirectClose: indikator/gallery/categories
