@@ -3,7 +3,6 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 use Backend\Models\UserPreferences;
-use DB;
 use Flash;
 use Lang;
 
@@ -32,8 +31,8 @@ class Categories extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
-                if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 2)->count() == 1) {
-                    DB::table('gallery_categories')->where('id', $objectId)->update(['status' => 1]);
+                if (Categories::where('id', $objectId)->where('status', 2)->count() == 1) {
+                    Categories::where('id', $objectId)->update(['status' => 1]);
                 }
             }
 
@@ -47,8 +46,8 @@ class Categories extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
-                if (DB::table('gallery_categories')->where('id', $objectId)->where('status', 1)->count() == 1) {
-                    DB::table('gallery_categories')->where('id', $objectId)->update(['status' => 2]);
+                if (Categories::where('id', $objectId)->where('status', 1)->count() == 1) {
+                    Categories::where('id', $objectId)->update(['status' => 2]);
                 }
             }
 
@@ -62,8 +61,8 @@ class Categories extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $objectId) {
-                if (DB::table('gallery_categories')->where('id', $objectId)->count() == 1) {
-                    DB::table('gallery_categories')->where('id', $objectId)->delete();
+                if (Categories::where('id', $objectId)->count() == 1) {
+                    Categories::where('id', $objectId)->delete();
                 }
             }
 
