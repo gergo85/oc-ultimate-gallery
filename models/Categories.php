@@ -19,13 +19,20 @@ class Categories extends Model
         'featured' => 'required|between:1,2|numeric'
     ];
 
-    protected $slugs = ['slug' => 'name'];
+    protected $slugs = [
+        'slug' => 'name'
+    ];
 
     public $belongsTo = [
         'user' => ['Indikator\Gallery\Models\User']
     ];
 
-    public $translatable = ['name', 'labels', 'desc'];
+    public $translatable = [
+        'name',
+        ['slug', 'index' => true],
+        'labels',
+        'desc'
+    ];
 
     public function getUserIdOptions()
     {
