@@ -2,7 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
-use Backend\Models\UserPreferences;
+use Indikator\Gallery\Models\Categories as Item;
 use Flash;
 use Lang;
 
@@ -31,7 +31,7 @@ class Categories extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $itemId) {
-                if (!$item = Categories::where('status', 2)->find($itemId)) {
+                if (!$item = Item::where('status', 2)->find($itemId)) {
                     continue;
                 }
 
@@ -48,7 +48,7 @@ class Categories extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $itemId) {
-                if (!$item = Categories::where('status', 1)->find($itemId)) {
+                if (!$item = Item::where('status', 1)->find($itemId)) {
                     continue;
                 }
 
@@ -65,7 +65,7 @@ class Categories extends Controller
     {
         if (($checkedIds = post('checked')) && is_array($checkedIds) && count($checkedIds)) {
             foreach ($checkedIds as $itemId) {
-                if (!$item = Categories::find($itemId)) {
+                if (!$item = Item::find($itemId)) {
                     continue;
                 }
 
