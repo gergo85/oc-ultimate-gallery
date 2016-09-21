@@ -37,5 +37,5 @@ I extended the album with some useful properties.
 1. Click on the __Manage widgets > Add widget__ button.
 1. Select the any __Gallery widgets__ from the list.
 
-#Credits
+## Credits
 * [lightGallery](http://sachinchoolur.github.io/lightGallery)
