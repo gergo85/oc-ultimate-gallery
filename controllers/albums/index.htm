@@ -2,9 +2,9 @@
     <ul>
         <li><?= e(trans('indikator.gallery::lang.menu.albums')) ?></li>
         <li>
-            <span class="text-info"><strong><?= DB::table('gallery_albums')->where('status', 1)->count() ?></strong> <?= e(trans('indikator.gallery::lang.button.active')) ?></span>
+            <span class="text-info"><strong><?= Indikator\Gallery\Models\Albums::where('status', 1)->count() ?></strong> <?= e(trans('indikator.gallery::lang.button.active')) ?></span>
             &nbsp; | &nbsp;
-            <span class="text-danger"><strong><?= DB::table('gallery_albums')->where('status', 2)->count() ?></strong> <?= e(trans('indikator.gallery::lang.button.inactive')) ?></span>
+            <span class="text-danger"><strong><?= Indikator\Gallery\Models\Albums::where('status', 2)->count() ?></strong> <?= e(trans('indikator.gallery::lang.button.inactive')) ?></span>
         </li>
     </ul>
 <?php Block::endPut() ?>
