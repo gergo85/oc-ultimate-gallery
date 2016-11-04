@@ -37,6 +37,6 @@ class Categories extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['total'] = Indikator\Gallery\Models\Categories::count();
+        $this->vars['total'] = \Indikator\Gallery\Models\Categories::count();
     }
 }
