@@ -2,7 +2,6 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use DB;
 
 class Albums extends ReportWidgetBase
 {
@@ -38,6 +37,6 @@ class Albums extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['total'] = DB::table('gallery_albums')->count();
+        $this->vars['total'] = Indikator\Gallery\Models\Albums::count();
     }
 }

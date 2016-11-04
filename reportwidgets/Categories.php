@@ -2,7 +2,6 @@
 
 use Backend\Classes\ReportWidgetBase;
 use Exception;
-use DB;
 
 class Categories extends ReportWidgetBase
 {
@@ -38,6 +37,6 @@ class Categories extends ReportWidgetBase
 
     protected function loadData()
     {
-        $this->vars['total'] = DB::table('gallery_categories')->count();
+        $this->vars['total'] = Indikator\Gallery\Models\Categories::count();
     }
 }
