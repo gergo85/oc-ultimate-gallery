@@ -23,6 +23,7 @@ class Plugin extends PluginBase
                 'label'       => 'indikator.gallery::lang.menu.gallery',
                 'url'         => Backend::url('indikator/gallery/albums'),
                 'icon'        => 'icon-picture-o',
+                'iconSvg'     => 'plugins/indikator/gallery/assets/img/gallery-icon.svg',
                 'permissions' => ['indikator.gallery.*'],
                 'order'       => 500,
 
